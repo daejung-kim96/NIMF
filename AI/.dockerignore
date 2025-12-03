@@ -1,0 +1,62 @@
+# Git 관련
+.git
+.gitignore
+.gitattributes
+
+# Python 관련
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
+
+# 개발 환경
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS 관련
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 임시 파일
+*.tmp
+*.temp
+
+# 로그 파일
+*.log
+
+# 환경 변수 파일
+.env
+.env.local
+.env.*.local
+
+# 데이터 파일 (필요시 주석 해제)
+# ai_audio/data/
+# ai_audio/sherpa_onnx_model/
+
+# 문서
+README.md
+*.md

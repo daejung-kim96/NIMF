@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./BE
+    container_name: backend
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - MONGO_HOSTS=${MONGO_HOSTS}
+      - MONGO_DATABASE_NAME=${MONGO_DATABASE_NAME}
+      - MONGO_REPLICA=${MONGO_REPLICA}
+      - MONGO_USER=${MONGO_USER}
+      - MONGO_PASS=${MONGO_PASS}          
+      - MONGO_APP_NAME=${MONGO_APP_NAME}
+      - JWT_SECRET=${JWT_SECRET}
+      - ACCOUNT_SID=${ACCOUNT_SID}
+      - AUTH_TOKEN=${AUTH_TOKEN}
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  frontend:
+    build: ./FE
+    container_name: frontend
+    ports:
+      - "3001:80"  # 프론트엔드 컨테이너 포트
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  ai-server:
+    build: ./AI
+    container_name: ai-server
+    ports:
+      - "8000:8000"
+    environment:
+      - YOLO_DEVICE=cpu
+      - ACCOUNT_SID=${ACCOUNT_SID}
+      - AUTH_TOKEN=${AUTH_TOKEN}
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  streaming-server:
+    build: ./streaming-server
+    container_name: streaming-server
+    ports:
+      - "5002:5002"
+    environment:
+      - ACCOUNT_SID=${ACCOUNT_SID}
+      - AUTH_TOKEN=${AUTH_TOKEN}
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

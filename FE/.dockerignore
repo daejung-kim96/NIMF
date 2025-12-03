@@ -1,0 +1,71 @@
+# 의존성
+node_modules
+npm-debug.log*
+
+# 빌드 결과물
+dist
+build
+
+# 환경 변수 파일
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 로그 파일
+logs
+*.log
+
+# 런타임 데이터
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 커버리지 디렉토리
+coverage
+.nyc_output
+
+# Git 관련
+.git
+.gitignore
+
+# IDE 관련
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS 관련
+.DS_Store
+Thumbs.db
+
+# Docker 관련
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# 테스트 관련
+test
+tests
+*.test.js
+*.spec.js
+__tests__
+
+# 문서
+README.md
+*.md
+
+# 임시 파일
+tmp
+temp
+
+# Vite 관련
+.vite
+
+# ESLint 관련
+.eslintcache
+
+# TypeScript 관련
+*.tsbuildinfo 

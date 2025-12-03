@@ -1,0 +1,488 @@
+?? nimf-audio Project Auto Start
+C:\Users\SSAFY\miniforge3\envs\nimf-audio\Lib\site-packages\ctranslate2\__init__.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+C:\DevProjs\S13P11A309\AI\main.py:73: DeprecationWarning:
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+
+  @app.on_event("startup")
+🚀 통합 미디어 서버 (비디오 + 오디오) 시작...
+INFO:     Started server process [24520]
+INFO:     Waiting for application startup.
+🚀 서버 시작 중...
+📋 AI 서버 설정:
+   YOLO 모델: best.pt
+   서버 주소: 0.0.0.0:8000
+   스트리밍 서버: http://localhost:5002
+   물체 감지: 활성화
+   음성 인식: 활성화
+   감지 신뢰도: 0.5
+❌ 전역 YOLO 모델 초기화 실패: best.pt
+⚠️ 물체 감지 기능이 비활성화됩니다.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     ('127.0.0.1', 59131) - "WebSocket /ws" [accepted]
+✅ 클라이언트 연결됨. 총 연결 수: 1
+INFO:     connection open
+📝 세션 ID 설정: sess_1755066912273_4ddb65c2dbd781d3089c39586887670d
+📡 통합 서버 offer 수신 (target: unified) → answer 생성
+📥 통합 서버에서 수신된 트랙: audio
+🎧 AudioProcessor 생성됨 (세션: sess_1755066912273_4ddb65c2dbd781d3089c39586887670d)
+✅ Whisper small 모델 로딩 완료!
+✅ Whisper 음성 인식기가 초기화되었습니다.
+✅ 욕설 단어 사전 로드 완료: 3개 카테고리
+🎤 AudioProcessor.start_speech_recognition() 호출됨
+🔄 음성 인식 처리 스레드 시작
+🎤 실시간 음성 인식이 시작되었습니다
+✅ AudioProcessor: 음성 인식이 시작되었습니다.
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+📥 통합 서버에서 수신된 트랙: video
+📹 비디오 트랙 수신:  <aiortc.rtcrtpreceiver.RemoteStreamTrack object at 0x0000029904C1C190>
+INFO:aioice.ice:Connection(0) Could not bind to 169.254.90.219 - [WinError 10049] 요청한 주소는 해당 컨텍스트에서 유효하지 않습니다
+INFO:aioice.ice:Connection(0) Could not bind to 169.254.41.85 - [WinError 10049] 요청한 주소는 해당 컨텍스트에서 유효하지 않습니다
+INFO:aioice.ice:Connection(0) Could not bind to 169.254.144.252 - [WinError 10049] 요청한 주소는 해당 컨텍스트에서 유효하지 않습니다
+INFO:__main__:세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d의 필터 설정 업데이트 요청 받음
+🔧 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d 필터 설정 저장됨: {'videoFilter': {'category': {'smoke': True, 'drink': True, 'sharpObjects': True, 'flammables': False, 'firearms': False, 'exposure': False}, 'action': {'filtering': True, 'alert': True, 'logging': True}}, 'audioFilter': {'category': {'profanity': 'mid', 'hateSpeech': False, 'bannedWords': ['하지마', '안돼요']}, 'action': {'filtering': False, 'alert': True, 'logging': False}}, 'updated_at': datetime.datetime(2025, 8, 13, 15, 35, 23, 35701)}
+INFO:__main__:세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d 필터 설정:
+INFO:__main__:  비디오 필터: {'category': {'smoke': True, 'drink': True, 'sharpObjects': True, 'flammables': False, 'firearms': False, 'exposure': False}, 'action': {'filtering': True, 'alert': True, 'logging': True}}
+INFO:__main__:  오디오 필터: {'category': {'profanity': 'mid', 'hateSpeech': False, 'bannedWords': ['하지마', '안돼요']}, 'action': {'filtering': False, 'alert': True, 'logging': False}}
+INFO:     127.0.0.1:59148 - "POST /sessions/sess_1755066912273_4ddb65c2dbd781d3089c39586887670d/filter HTTP/1.1" 200 OK
+⏰ 큐 타임아웃 (1초) - 계속 대기
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+⏰ 큐 타임아웃 (1초) - 계속 대기
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+⏰ 큐 타임아웃 (1초) - 계속 대기
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+⏰ 큐 타임아웃 (1초) - 계속 대기
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+⏰ 큐 타임아웃 (1초) - 계속 대기
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+스트리밍 서버와 연결 시도: sess_1755066912273_4ddb65c2dbd781d3089c39586887670d
+🔌 Socket.IO 연결 시도: http://localhost:5002
+📶 통합 서버 연결 상태: connecting | ICE: checking | Gathering: complete
+INFO:aioice.ice:Connection(0) Check CandidatePair(('70.12.246.202', 50014) -> ('70.12.246.202', 64955)) State.FROZEN -> State.WAITING
+INFO:aioice.ice:Connection(0) Check CandidatePair(('70.12.246.202', 50014) -> ('13.115.244.21', 19375)) State.FROZEN -> State.WAITING
+INFO:aioice.ice:Connection(0) Check CandidatePair(('70.12.246.202', 50014) -> ('70.12.246.202', 64955)) State.WAITING -> State.IN_PROGRESS
+INFO:aioice.ice:Connection(0) Check CandidatePair(('70.12.246.202', 50014) -> ('70.12.246.202', 64955)) State.IN_PROGRESS -> State.SUCCEEDED
+INFO:aioice.ice:Connection(0) Check CandidatePair(('70.12.246.202', 50014) -> ('13.115.244.21', 19375)) State.WAITING -> State.FAILED
+INFO:aioice.ice:Connection(0) ICE completed
+📶 통합 서버 연결 상태: connected | ICE: completed | Gathering: complete
+✅ WebRTC 연결 성공!
+✅ Socket.IO 연결 성공!
+✅ 스트리밍 서버 연결 준비 완료: sess_1755066912273_4ddb65c2dbd781d3089c39586887670d
+📡 Data Channel 수신: <aiortc.rtcdatachannel.RTCDataChannel object at 0x0000029904DE8CD0>
+📡 Data Channel 상태: open
+📡 Data Channel 라벨: 92b8b338fb233a1a56a63a60eb51e666c4256c57
+📡 Data Channel ID: 1
+[<aiortc.rtcrtpsender.RTCRtpSender object at 0x0000029904A72550>, <aiortc.rtcrtpsender.RTCRtpSender object at 0x0000029904BECD50>]
+[<aiortc.rtcrtpreceiver.RTCRtpReceiver object at 0x0000029904BD7A90>, <aiortc.rtcrtpreceiver.RTCRtpReceiver object at 0x0000029904BECE90>]
+[<aiortc.rtcrtptransceiver.RTCRtpTransceiver object at 0x0000029904BD7E50>, <aiortc.rtcrtptransceiver.RTCRtpTransceiver object at 0x0000029904C10F10>]
+📡 AudioProcessor에 Data Channel 설정됨: 92b8b338fb233a1a56a63a60eb51e666c4256c57
+Received offer SDP for session sess_1755066912273_4ddb65c2dbd781d3089c39586887670d:
+v=0
+o=- 901472364943008360 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=msid-semantic: WMS
+m=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 127 124 125
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:1Kcx
+a=ice-pwd:QUSHTJposaxGxg0jQNAZ/bYo
+a=ice-options:trickle
+a=fingerprint:sha-256 F4:8D:D1:D0:93:66:1E:16:8B:9F:DD:29:4F:7C:CD:CF:5F:B3:C8:E9:98:65:2C:6A:BE:04:C1:3C:76:8A:89:1F
+a=setup:actpass
+a=mid:0
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
+a=extmap:8 http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07
+a=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=recvonly
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:96 VP8/90000
+a=rtcp-fb:96 goog-remb
+a=rtcp-fb:96 transport-cc
+a=rtcp-fb:96 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtpmap:97 rtx/90000
+a=fmtp:97 apt=96
+a=rtpmap:98 VP9/90000
+a=rtcp-fb:98 goog-remb
+a=rtcp-fb:98 transport-cc
+a=rtcp-fb:98 ccm fir
+a=rtcp-fb:98 nack
+a=rtcp-fb:98 nack pli
+a=fmtp:98 profile-id=0
+a=rtpmap:99 rtx/90000
+a=fmtp:99 apt=98
+a=rtpmap:100 VP9/90000
+a=rtcp-fb:100 goog-remb
+a=rtcp-fb:100 transport-cc
+a=rtcp-fb:100 ccm fir
+a=rtcp-fb:100 nack
+a=rtcp-fb:100 nack pli
+a=fmtp:100 profile-id=2
+a=rtpmap:101 rtx/90000
+a=fmtp:101 apt=100
+a=rtpmap:127 red/90000
+a=rtpmap:124 rtx/90000
+a=fmtp:124 apt=127
+a=rtpmap:125 ulpfec/90000
+m=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:1Kcx
+a=ice-pwd:QUSHTJposaxGxg0jQNAZ/bYo
+a=ice-options:trickle
+a=fingerprint:sha-256 F4:8D:D1:D0:93:66:1E:16:8B:9F:DD:29:4F:7C:CD:CF:5F:B3:C8:E9:98:65:2C:6A:BE:04:C1:3C:76:8A:89:1F
+a=setup:actpass
+a=mid:1
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=recvonly
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:102 ILBC/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+
+📡 스트리밍 서버 offer 수신: sess_1755066912273_4ddb65c2dbd781d3089c39586887670d
+streaming_pc 생성함
+audio 트랙 : audio
+video 트랙 : video
+INFO:aioice.ice:Connection(3) Could not bind to 169.254.90.219 - [WinError 10049] 요청한 주소는 해당 컨텍스트에서 유효하지 않습니다
+INFO:aioice.ice:Connection(3) Could not bind to 169.254.41.85 - [WinError 10049] 요청한 주소는 해당 컨텍스트에서 유효하지 않습니다
+INFO:aioice.ice:Connection(3) Could not bind to 169.254.144.252 - [WinError 10049] 요청한 주소는 해당 컨텍스트에서 유효하지 않습니다
+🔊 오디오 데이터 통계: min=-11135, max=9112, mean=-233.9, rms=3027.1
+🔍 프레임 포맷: <av.AudioFormat s16>
+🔍 프레임 샘플 레이트: 48000Hz
+🔍 프레임 채널 수: <av.AudioLayout 'stereo'>
+🔍 프레임 데이터 크기: 1920
+🔍 프레임 데이터 타입: int16
+🔍 프레임 데이터 형태: (1920,)
+🔍 프레임 데이터 포맷: <av.AudioFormat s16>
+🔍 스테레오 프레임 감지됨 – 모노로 변환
+📊 예상 프레임 간격: 20.0ms
+📊 예상 PTS 증가량: 960.0
+[libx264 @ 00000299211ce840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 00000299211ce840] profile Constrained Baseline, level 3.1, 4:2:0, 8-bit
+⏰ 큐 타임아웃 (1초) - 계속 대기
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+⏰ 큐 타임아웃 (1초) - 계속 대기
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=22.9ms, 최소=18.7ms
+❌ WebSocket 종료 에러: 1005
+INFO:     connection closed
+[libx264 @ 00000299211ce840] frame I:1     Avg QP:34.21  size: 15186
+[libx264 @ 00000299211ce840] frame P:60    Avg QP:30.97  size:  3465
+[libx264 @ 00000299211ce840] mb I  I16..4: 81.3%  0.0% 18.7%
+[libx264 @ 00000299211ce840] mb P  I16..4:  7.3%  0.0%  0.3%  P16..4: 35.9%  1.3%  0.3%  0.0%  0.0%    skip:54.9%
+[libx264 @ 00000299211ce840] final ratefactor: 32.95
+[libx264 @ 00000299211ce840] coded y,uvDC,uvAC intra: 5.6% 21.1% 0.4% inter: 0.5% 2.7% 0.0%
+[libx264 @ 00000299211ce840] i16 v,h,dc,p: 28% 31% 25% 16%
+[libx264 @ 00000299211ce840] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 18% 40%  4%  2%  2%  2%  3%  2%
+[libx264 @ 00000299211ce840] i8c dc,h,v,p: 88%  7%  4%  1%
+[libx264 @ 00000299211ce840] ref P L0: 81.3% 12.3%  6.4%
+[libx264 @ 00000299211ce840] kb/s:877.70
+[libx264 @ 00000299146d8c40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 00000299146d8c40] profile Constrained Baseline, level 3.1, 4:2:0, 8-bit
+🔊 오디오 레벨: RMS=95.7, 무음=예
+📊 버퍼링 진행 [125프레임]: 2.5초 경과, 버퍼 샘플=119040, 예상 샘플=119008
+⏰ 큐 타임아웃 (1초) - 계속 대기
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+⏰ 큐 타임아웃 (1초) - 계속 대기
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+🕐 프레임 간격 분석 (최근 20개): 평균=20.1ms, 최대=21.6ms, 최소=18.6ms
+⏰ 큐 타임아웃 (1초) - 계속 대기
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 0)
+📤 스트리밍 서버로 answer 전송: sess_1755066912273_4ddb65c2dbd781d3089c39586887670d
+INFO:aioice.ice:Connection(3) Check CandidatePair(('70.12.246.202', 59313) -> ('70.12.246.202', 55361)) State.FROZEN -> State.WAITING
+INFO:aioice.ice:Connection(3) Check CandidatePair(('70.12.246.202', 59313) -> ('127.0.0.1', 55363)) State.FROZEN -> State.WAITING
+📶 스트리밍 서버 연결 상태: connecting
+INFO:aioice.ice:Connection(3) Check CandidatePair(('70.12.246.202', 59313) -> ('70.12.246.202', 55361)) State.WAITING -> State.IN_PROGRESS
+INFO:aioice.ice:Connection(3) Check CandidatePair(('70.12.246.202', 59313) -> ('70.12.246.202', 55361)) State.IN_PROGRESS -> State.SUCCEEDED
+INFO:aioice.ice:Connection(3) Check CandidatePair(('70.12.246.202', 59313) -> ('127.0.0.1', 55363)) State.WAITING -> State.FAILED
+INFO:aioice.ice:Connection(3) ICE completed
+📶 스트리밍 서버 연결 상태: connected
+✅ 스트리밍 서버 연결 성공!
+🔊 오디오 레벨: RMS=52.2, 무음=예
+📊 버퍼링 진행 [250프레임]: 5.0초 경과, 버퍼 샘플=239040, 예상 샘플=239041
+🎉 5초 버퍼 완성! 경과시간: 5.02초, 버퍼 크기: 241920 샘플
+🔢 numpy 배열 생성됨: 240000 샘플, dtype=int16
+🔄 리샘플링 시작: 48000Hz → 16kHz
+✅ 리샘플링 완료: 80000 샘플
+🔢 float32 변환 완료: 80000 샘플, 범위: [-0.710, 0.537]
+🔍 STT 엔진 상태 확인:
+   - speech_recognizer 존재: True
+   - is_running: True
+📤 STT 엔진 process_audio_chunk() 호출 중...
+📥 STT 엔진 수신: 2 샘플 (5초 버퍼 완성됨)
+✅ 5초 오디오 큐에 바로 추가됨. 큐 크기: 1
+🎵 큐에서 오디오 데이터 받음: 80000 샘플
+🎯 STT 엔진으로 전송 완료 (5초 버퍼): 80000 샘플 (16kHz, 5.0초)
+🎤 Whisper 처리 시작: 80000 샘플, 데이터 타입: float32
+🔊 오디오 레벨: min=-0.710, max=0.537, rms=0.040
+INFO:faster_whisper:Processing audio with duration 00:05.000
+[libx264 @ 00000299146d8c40] frame I:1     Avg QP:29.85  size: 11469
+[libx264 @ 00000299146d8c40] frame P:88    Avg QP:21.32  size:  4169
+[libx264 @ 00000299146d8c40] mb I  I16..4: 74.2%  0.0% 25.8%
+[libx264 @ 00000299146d8c40] mb P  I16..4:  3.5%  0.0%  2.0%  P16..4: 45.2%  6.4%  1.7%  0.0%  0.0%    skip:41.3%
+[libx264 @ 00000299146d8c40] final ratefactor: 23.68
+[libx264 @ 00000299146d8c40] coded y,uvDC,uvAC intra: 32.6% 40.9% 5.6% inter: 5.0% 8.2% 0.1%
+[libx264 @ 00000299146d8c40] i16 v,h,dc,p: 22% 29% 21% 28%
+[libx264 @ 00000299146d8c40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 26% 23%  2%  3%  4%  3%  2%  2%
+[libx264 @ 00000299146d8c40] i8c dc,h,v,p: 77% 16%  5%  2%
+[libx264 @ 00000299146d8c40] ref P L0: 84.8% 10.3%  4.9%
+[libx264 @ 00000299146d8c40] kb/s:1020.16
+[libx264 @ 00000299146d8c40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 00000299146d8c40] profile Constrained Baseline, level 3.1, 4:2:0, 8-bit
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=21.1ms, 최소=18.6ms
+🔊 오디오 레벨: RMS=76.1, 무음=예
+📊 버퍼링 진행 [375프레임]: 2.5초 경과, 버퍼 샘플=117120, 예상 샘플=119006
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=22.2ms, 최소=18.5ms
+🕐 프레임 간격 분석 (최근 20개): 평균=20.1ms, 최대=21.3ms, 최소=19.0ms
+🔊 오디오 레벨: RMS=1266.6, 무음=아니오
+📊 버퍼링 진행 [500프레임]: 5.0초 경과, 버퍼 샘플=237120, 예상 샘플=239052
+🎉 5초 버퍼 완성! 경과시간: 5.00초, 버퍼 크기: 239040 샘플
+🔢 numpy 배열 생성됨: 239040 샘플, dtype=int16
+🔄 리샘플링 시작: 48000Hz → 16kHz
+✅ 리샘플링 완료: 79680 샘플
+🔢 float32 변환 완료: 79680 샘플, 범위: [-0.266, 0.213]
+🔍 STT 엔진 상태 확인:
+   - speech_recognizer 존재: True
+   - is_running: True
+📤 STT 엔진 process_audio_chunk() 호출 중...
+📥 STT 엔진 수신: 2 샘플 (5초 버퍼 완성됨)
+✅ 5초 오디오 큐에 바로 추가됨. 큐 크기: 1
+🎯 STT 엔진으로 전송 완료 (5초 버퍼): 79680 샘플 (16kHz, 5.0초)
+⏱️ Whisper 처리 시간: 5.18초
+📝 인식된 텍스트: '여기 꺼져 안 돼요'
+🎯 인식 결과 (5.18s): 여기 꺼져 안 돼요
+🎯 음성 인식 결과: 여기 꺼져 안 돼요
+📥 STT 결과 큐에 추가됨: 여기 꺼져 안 돼요
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 1)
+🎵 큐에서 오디오 데이터 받음: 79680 샘플
+🎤 Whisper 처리 시작: 79680 샘플, 데이터 타입: float32
+🔊 오디오 레벨: min=-0.266, max=0.213, rms=0.023
+INFO:faster_whisper:Processing audio with duration 00:04.980
+🔧 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d 카테고리 정보: {'profanity': 'mid', 'hateSpeech': False, 'bannedWords': ['하지마', '안돼요']}
+🔍 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d: 욕설 수위 레벨 - mid
+🔍 감지 허용 카테고리: ['high', 'mid']
+🚨 욕설/금지어 감지: 욕설-수위 중간 - 꺼져
+📤 Data Channel로 STT 결과 전송: 여기 꺼져 안 돼요
+🕐 프레임 간격 분석 (최근 20개): 평균=19.7ms, 최대=22.8ms, 최소=15.2ms
+🔊 오디오 레벨: RMS=82.0, 무음=예
+📊 버퍼링 진행 [625프레임]: 2.5초 경과, 버퍼 샘플=118080, 예상 샘플=119049
+[libx264 @ 00000299146d8c40] frame I:1     Avg QP:29.06  size: 12534
+[libx264 @ 00000299146d8c40] frame P:120   Avg QP:24.66  size:  5298
+[libx264 @ 00000299146d8c40] mb I  I16..4: 66.9%  0.0% 33.1%
+[libx264 @ 00000299146d8c40] mb P  I16..4:  5.4%  0.0%  2.2%  P16..4: 47.7%  7.5%  2.1%  0.0%  0.0%    skip:35.1%
+[libx264 @ 00000299146d8c40] final ratefactor: 26.52
+[libx264 @ 00000299146d8c40] coded y,uvDC,uvAC intra: 23.9% 46.0% 3.9% inter: 7.4% 14.1% 0.1%
+[libx264 @ 00000299146d8c40] i16 v,h,dc,p: 19% 39% 21% 21%
+[libx264 @ 00000299146d8c40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 26% 26%  4%  4%  5%  4%  4%  3%
+[libx264 @ 00000299146d8c40] i8c dc,h,v,p: 74% 16%  7%  2%
+[libx264 @ 00000299146d8c40] ref P L0: 83.0% 10.7%  6.3%
+[libx264 @ 00000299146d8c40] kb/s:1285.79
+[libx264 @ 00000299146d8c40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 00000299146d8c40] profile Constrained Baseline, level 3.1, 4:2:0, 8-bit
+🕐 프레임 간격 분석 (최근 20개): 평균=18.8ms, 최대=23.0ms, 최소=1.0ms
+🔊 오디오 레벨: RMS=321.3, 무음=아니오
+📊 버퍼링 진행 [750프레임]: 5.0초 경과, 버퍼 샘플=238080, 예상 샘플=238991
+🎉 5초 버퍼 완성! 경과시간: 5.00초, 버퍼 크기: 240000 샘플
+🔢 numpy 배열 생성됨: 240000 샘플, dtype=int16
+🔄 리샘플링 시작: 48000Hz → 16kHz
+✅ 리샘플링 완료: 80000 샘플
+🔢 float32 변환 완료: 80000 샘플, 범위: [-0.994, 0.930]
+🔍 STT 엔진 상태 확인:
+   - speech_recognizer 존재: True
+   - is_running: True
+📤 STT 엔진 process_audio_chunk() 호출 중...
+📥 STT 엔진 수신: 2 샘플 (5초 버퍼 완성됨)
+✅ 5초 오디오 큐에 바로 추가됨. 큐 크기: 1
+🎯 STT 엔진으로 전송 완료 (5초 버퍼): 80000 샘플 (16kHz, 5.0초)
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=22.2ms, 최소=17.7ms
+⏱️ Whisper 처리 시간: 6.25초
+📝 인식된 텍스트: '고맙습니다.'
+🎯 인식 결과 (6.25s): 고맙습니다.
+🎯 음성 인식 결과: 고맙습니다.
+📥 STT 결과 큐에 추가됨: 고맙습니다.
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 1)
+🎵 큐에서 오디오 데이터 받음: 80000 샘플
+🎤 Whisper 처리 시작: 80000 샘플, 데이터 타입: float32
+🔊 오디오 레벨: min=-0.994, max=0.930, rms=0.053
+INFO:faster_whisper:Processing audio with duration 00:05.000
+🔧 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d 카테고리 정보: {'profanity': 'mid', 'hateSpeech': False, 'bannedWords': ['하지마', '안돼요']}
+🔍 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d: 욕설 수위 레벨 - mid
+🔍 감지 허용 카테고리: ['high', 'mid']
+🔊 오디오 레벨: RMS=179.6, 무음=아니오
+📊 버퍼링 진행 [875프레임]: 2.5초 경과, 버퍼 샘플=118080, 예상 샘플=119001
+🕐 프레임 간격 분석 (최근 20개): 평균=20.1ms, 최대=22.0ms, 최소=18.6ms
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=21.3ms, 최소=18.1ms
+🔊 오디오 레벨: RMS=123.7, 무음=아니오
+📊 버퍼링 진행 [1000프레임]: 5.0초 경과, 버퍼 샘플=238080, 예상 샘플=239000
+🎉 5초 버퍼 완성! 경과시간: 5.02초, 버퍼 크기: 240960 샘플
+🔢 numpy 배열 생성됨: 240000 샘플, dtype=int16
+🔄 리샘플링 시작: 48000Hz → 16kHz
+✅ 리샘플링 완료: 80000 샘플
+🔢 float32 변환 완료: 80000 샘플, 범위: [-0.219, 0.209]
+🔍 STT 엔진 상태 확인:
+   - speech_recognizer 존재: True
+   - is_running: True
+📤 STT 엔진 process_audio_chunk() 호출 중...
+📥 STT 엔진 수신: 2 샘플 (5초 버퍼 완성됨)
+✅ 5초 오디오 큐에 바로 추가됨. 큐 크기: 1
+🎯 STT 엔진으로 전송 완료 (5초 버퍼): 80000 샘플 (16kHz, 5.0초)
+🕐 프레임 간격 분석 (최근 20개): 평균=20.1ms, 최대=22.7ms, 최소=17.9ms
+🔊 오디오 레벨: RMS=174.5, 무음=아니오
+📊 버퍼링 진행 [1125프레임]: 2.5초 경과, 버퍼 샘플=117120, 예상 샘플=119249
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=21.9ms, 최소=18.0ms
+🔊 오디오 레벨: RMS=2095.3, 무음=아니오
+📊 버퍼링 진행 [1250프레임]: 5.0초 경과, 버퍼 샘플=237120, 예상 샘플=239002
+🎉 5초 버퍼 완성! 경과시간: 5.02초, 버퍼 크기: 240000 샘플
+🔢 numpy 배열 생성됨: 240000 샘플, dtype=int16
+🔄 리샘플링 시작: 48000Hz → 16kHz
+✅ 리샘플링 완료: 80000 샘플
+🔢 float32 변환 완료: 80000 샘플, 범위: [-0.572, 0.635]
+🔍 STT 엔진 상태 확인:
+   - speech_recognizer 존재: True
+   - is_running: True
+📤 STT 엔진 process_audio_chunk() 호출 중...
+📥 STT 엔진 수신: 2 샘플 (5초 버퍼 완성됨)
+✅ 5초 오디오 큐에 바로 추가됨. 큐 크기: 2
+🎯 STT 엔진으로 전송 완료 (5초 버퍼): 80000 샘플 (16kHz, 5.0초)
+⏱️ Whisper 처리 시간: 8.90초
+📝 인식된 텍스트: '감사합니다.'
+🎯 인식 결과 (8.90s): 감사합니다.
+🎯 음성 인식 결과: 감사합니다.
+📥 STT 결과 큐에 추가됨: 감사합니다.
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 2)
+🎵 큐에서 오디오 데이터 받음: 80000 샘플
+🎤 Whisper 처리 시작: 80000 샘플, 데이터 타입: float32
+🔧 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d 카테고리 정보: {'profanity': 'mid', 'hateSpeech': False, 'bannedWords': ['하지마', '안돼요']}
+🔍 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d: 욕설 수위 레벨 - mid
+🔍 감지 허용 카테고리: ['high', 'mid']
+🔊 오디오 레벨: min=-0.219, max=0.209, rms=0.019
+INFO:faster_whisper:Processing audio with duration 00:05.000
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=22.1ms, 최소=17.7ms
+🔊 오디오 레벨: RMS=296.1, 무음=아니오
+📊 버퍼링 진행 [1375프레임]: 2.5초 경과, 버퍼 샘플=117120, 예상 샘플=118991
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=21.2ms, 최소=18.6ms
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=22.8ms, 최소=17.1ms
+🔊 오디오 레벨: RMS=247.8, 무음=아니오
+📊 버퍼링 진행 [1500프레임]: 5.0초 경과, 버퍼 샘플=237120, 예상 샘플=238950
+🎉 5초 버퍼 완성! 경과시간: 5.02초, 버퍼 크기: 240000 샘플
+🔢 numpy 배열 생성됨: 240000 샘플, dtype=int16
+🔄 리샘플링 시작: 48000Hz → 16kHz
+✅ 리샘플링 완료: 80000 샘플
+🔢 float32 변환 완료: 80000 샘플, 범위: [-0.819, 0.870]
+🔍 STT 엔진 상태 확인:
+   - speech_recognizer 존재: True
+   - is_running: True
+📤 STT 엔진 process_audio_chunk() 호출 중...
+📥 STT 엔진 수신: 2 샘플 (5초 버퍼 완성됨)
+✅ 5초 오디오 큐에 바로 추가됨. 큐 크기: 2
+🎯 STT 엔진으로 전송 완료 (5초 버퍼): 80000 샘플 (16kHz, 5.0초)
+⏱️ Whisper 처리 시간: 4.91초
+📝 인식된 텍스트: ''
+🔇 음성 없음 또는 빈 결과 (4.91s)
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 2)
+🎵 큐에서 오디오 데이터 받음: 80000 샘플
+🎤 Whisper 처리 시작: 80000 샘플, 데이터 타입: float32
+🔊 오디오 레벨: min=-0.572, max=0.635, rms=0.049
+INFO:faster_whisper:Processing audio with duration 00:05.000
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=22.6ms, 최소=18.8ms
+🔊 오디오 레벨: RMS=9248.2, 무음=아니오
+📊 버퍼링 진행 [1625프레임]: 2.5초 경과, 버퍼 샘플=117120, 예상 샘플=118949
+🕐 프레임 간격 분석 (최근 20개): 평균=20.1ms, 최대=21.9ms, 최소=17.8ms
+🔊 오디오 레벨: RMS=1485.9, 무음=아니오
+📊 버퍼링 진행 [1750프레임]: 5.0초 경과, 버퍼 샘플=237120, 예상 샘플=238989
+🎉 5초 버퍼 완성! 경과시간: 5.02초, 버퍼 크기: 240000 샘플
+🔢 numpy 배열 생성됨: 240000 샘플, dtype=int16
+🔄 리샘플링 시작: 48000Hz → 16kHz
+✅ 리샘플링 완료: 80000 샘플
+🔢 float32 변환 완료: 80000 샘플, 범위: [-1.000, 0.999]
+🔍 STT 엔진 상태 확인:
+   - speech_recognizer 존재: True
+   - is_running: True
+📤 STT 엔진 process_audio_chunk() 호출 중...
+📥 STT 엔진 수신: 2 샘플 (5초 버퍼 완성됨)
+✅ 5초 오디오 큐에 바로 추가됨. 큐 크기: 2
+🎯 STT 엔진으로 전송 완료 (5초 버퍼): 80000 샘플 (16kHz, 5.0초)
+⏱️ Whisper 처리 시간: 5.29초
+📝 인식된 텍스트: '저희는 이제 안 됐어? 너무 좋다 그럼'
+🎯 인식 결과 (5.29s): 저희는 이제 안 됐어? 너무 좋다 그럼
+🎯 음성 인식 결과: 저희는 이제 안 됐어? 너무 좋다 그럼
+📥 STT 결과 큐에 추가됨: 저희는 이제 안 됐어? 너무 좋다 그럼
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 2)
+🎵 큐에서 오디오 데이터 받음: 80000 샘플
+🎤 Whisper 처리 시작: 80000 샘플, 데이터 타입: float32
+🔊 오디오 레벨: min=-0.819, max=0.870, rms=0.065
+INFO:faster_whisper:Processing audio with duration 00:05.000
+🔧 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d 카테고리 정보: {'profanity': 'mid', 'hateSpeech': False, 'bannedWords': ['하지마', '안돼요']}
+🔍 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d: 욕설 수위 레벨 - mid
+🔍 감지 허용 카테고리: ['high', 'mid']
+🕐 프레임 간격 분석 (최근 20개): 평균=20.1ms, 최대=22.3ms, 최소=17.6ms
+🔊 오디오 레벨: RMS=1999.2, 무음=아니오
+📊 버퍼링 진행 [1875프레임]: 2.5초 경과, 버퍼 샘플=117120, 예상 샘플=118945
+🕐 프레임 간격 분석 (최근 20개): 평균=20.1ms, 최대=21.7ms, 최소=19.0ms
+🕐 프레임 간격 분석 (최근 20개): 평균=20.0ms, 최대=21.5ms, 최소=18.6ms
+🔊 오디오 레벨: RMS=484.8, 무음=아니오
+📊 버퍼링 진행 [2000프레임]: 5.0초 경과, 버퍼 샘플=237120, 예상 샘플=238989
+🎉 5초 버퍼 완성! 경과시간: 5.02초, 버퍼 크기: 240000 샘플
+🔢 numpy 배열 생성됨: 240000 샘플, dtype=int16
+🔄 리샘플링 시작: 48000Hz → 16kHz
+✅ 리샘플링 완료: 80000 샘플
+🔢 float32 변환 완료: 80000 샘플, 범위: [-0.909, 0.866]
+🔍 STT 엔진 상태 확인:
+   - speech_recognizer 존재: True
+   - is_running: True
+📤 STT 엔진 process_audio_chunk() 호출 중...
+📥 STT 엔진 수신: 2 샘플 (5초 버퍼 완성됨)
+✅ 5초 오디오 큐에 바로 추가됨. 큐 크기: 2
+🎯 STT 엔진으로 전송 완료 (5초 버퍼): 80000 샘플 (16kHz, 5.0초)
+⏱️ Whisper 처리 시간: 5.34초
+📝 인식된 텍스트: '이제 무섭게 무섭게'
+🎯 인식 결과 (5.34s): 이제 무섭게 무섭게
+🎯 음성 인식 결과: 이제 무섭게 무섭게
+📥 STT 결과 큐에 추가됨: 이제 무섭게 무섭게
+🔍 큐에서 오디오 데이터 대기 중... (큐 크기: 2)
+🎵 큐에서 오디오 데이터 받음: 80000 샘플
+🎤 Whisper 처리 시작: 80000 샘플, 데이터 타입: float32
+🔊 오디오 레벨: min=-1.000, max=0.999, rms=0.194
+INFO:faster_whisper:Processing audio with duration 00:05.000
+🔧 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d 카테고리 정보: {'profanity': 'mid', 'hateSpeech': False, 'bannedWords': ['하지마', '안돼요']}
+🔍 세션 sess_1755066912273_4ddb65c2dbd781d3089c39586887670d: 욕설 수위 레벨 - mid
+🔍 감지 허용 카테고리: ['high', 'mid']
+🕐 프레임 간격 분석 (최근 20개): 평균=19.9ms, 최대=22.0ms, 최소=18.1ms
+🔊 오디오 레벨: RMS=85.3, 무음=예
+📊 버퍼링 진행 [2125프레임]: 2.5초 경과, 버퍼 샘플=117120, 예상 샘플=118943
